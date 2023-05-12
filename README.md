@@ -8,4 +8,4 @@
 ## 编译说明
 将项目克隆到本地英文目录下
 
-使用Visual Studio 2022打开项目，编译
+使用Visual Studio 2022打开/proj.win32/SuperCat.sln，编译
