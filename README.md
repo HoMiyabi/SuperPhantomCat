@@ -1,4 +1,4 @@
-# SuperPhantomCat
+# Super Phantom Cat
 
 这是一个模仿《超级幻影猫》的简单DEMO，基于Cocos2d-x 3.17.2
 
