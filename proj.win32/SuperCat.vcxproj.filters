@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{bbe151ed-eb9d-4325-a146-8c63a843acd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene\Welcome">
+      <UniqueIdentifier>{6de3dfcd-2eb5-458a-b3bc-a513f9701f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene\Game">
+      <UniqueIdentifier>{8c418c9e-f352-408a-9b7d-9fed464d5a39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene\End">
+      <UniqueIdentifier>{7fc74f82-697e-4b62-84d4-48bdfa79b8a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene\Game\Node">
+      <UniqueIdentifier>{e7bfa385-1aae-4dd6-a74a-410d9f93439e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene\Game\Component">
+      <UniqueIdentifier>{7bde85e3-3e91-4c66-a02d-f2aef3213ff9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Hero.cpp">
+      <Filter>src\Scene\Game\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WelcomeScene.cpp">
+      <Filter>src\Scene\Welcome</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>src\Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EndScene.cpp">
+      <Filter>src\Scene\End</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CoinBehavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Behavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BrickBehavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SlimeBehavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Collider.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TiledMapBehavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ActiveCollider.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CoverBehavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CameraBehavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Definitions.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TriggerBehavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ExitBehavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HideBrickBehavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MushroomBehavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HeartBehavior.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Hero.h">
+      <Filter>src\Scene\Game\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CoinAudio.h">
+      <Filter>src\Scene\Game\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HealthNode.h">
+      <Filter>src\Scene\Game\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CoinCountNode.h">
+      <Filter>src\Scene\Game\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CameraHelper.h">
+      <Filter>src\Scene\Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WelcomeScene.h">
+      <Filter>src\Scene\Welcome</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>src\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EndScene.h">
+      <Filter>src\Scene\End</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Ticker.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+</Project>

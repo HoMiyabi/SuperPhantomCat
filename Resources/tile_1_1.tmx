@@ -1,0 +1,2355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="189" height="100" tilewidth="64" tileheight="64" infinite="0" nextlayerid="24" nextobjectid="459">
+ <tileset firstgid="1" source="tile_1_1.tsx"/>
+ <tileset firstgid="494" source="tile_1_1_bg.tsx"/>
+ <layer id="14" name="grass" width="189" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt20ly20YUAFCRXlK2k1xDUrxInFwj0wFygUw3yCqTnVNkvkfic2RaS5Ys7tMso13NVjcIDgBJ5L2qX7RICICt3x+/W+2TEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgP16e3py8jjEO9N93wn0772Q5++H+CDEhyE+kveM3Cchxz8N8VmIz0N8Ief5n3gq1xmxUv/+m5xnpGr9+zM5z0jV+vd/5Dwjl/cy8etbuc8I5P17qO1/PntZ4z++nS5//fq9/d4rbCvv32GM0rqe9+8wNrV1GevvjFVtXcb6O5t6a7rcO7x7oLmU13Xr72xqyD1Z2+x3zOu69ffjMmRtfRDO/bCJ+8mfF/FaYU7Y156sbcbW4nvj2mN8T29zXIasrWdJjp+GmCVfXzTXfTJ92Tt83+N92O94uIaowUP+/N/Mavsseb1IrjtE3RxibLG+IWrw7+Gcf0yHybNZlvNpn5Pm/FBzQj3J4RmiBv8Vzvl306P+23MOnDf5fV6INOeHmhOuO7YeJPOQ0+x5tZiPPJ8sB+sbsgbn0jq8yqzjsY8KNT7mTuh7vozHDfX3XXdsnbXc/2LM3oQ8vwwxb14Xcdu8vjiSMbDvfXB91+A3WvY8zbJaVorTpkZ3HRtnlXPez75/6N6m68/5LLnfvE+7KNT56ybfryZ3PzuE58Ch3c8hyHMyXWuJ75037x+TmONxbG263zH9d1jk/Lyp5zGHbpJafzu5+3k8Zl/S59ClnH+lrc7PjizX+1aq5fuKmM9pn1V73qjzy2p9SKzx3JX28qW6fjmpH5M+Gy53kPvXybVeZNeYq/Oj8FXoU74O8U2Ib0N8F+LJnv6vRlttTXNxVf3dJtIxdFW5fvyc4/RDyO8fQ/wU4ucQv4T4dU85H/uKUp+f1ti0/ubvPS98Vps3tI2dmONpXc+Ph11YtXZTysvSsas+i2Mo71/y8TRvuZcFY4BtxZqaziVLNTpfy6/197Xo2h/FsTMvnCPeb7w+bGrXPfr1ZLnPSV+79kbWcehTLQfTWpv26Om6yia9+yYBu3TTodfI11W69CelXqlW09ueCdZs6MOq3OzS988n6/2Oqcs4szZPX7rkYVufndb20h62Ut0vrd3U5r6wa7Xfqd5UcrmW03G9MX+/a82/aiKOIWs09G3Xazi158Cqtc04TmAotdpe23/Ttm+gLeKezvwcsC+lWp33KXkfEue+q/qZdI5grsqh6KvXqcWh+w8pou9Q
+  </data>
+ </layer>
+ <layer id="18" name="stage" width="189" height="100" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt1EkNgAAMRcEGryw6WHyAEBACZqgJQqAzyb/38NIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4hraJ6HJ9bmjevgaeN2bnU27OLZqniDVb3/ROIXv2fmieQs7s/dI8hfjzVPOX5m9qLAs0
+  </data>
+ </layer>
+ <layer id="1" name="Ground" width="189" height="100">
+  <properties>
+   <property name="colli" type="int" value="1"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt3NmPG0UQx/ECFl4gQRyPsDTZLEnIIUIACUKAAA9IHCGEh5CQPAH/X+AfpEszP7mmt+dY2/F67O9HKnmPsT32VvdUH14zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzNnLOV7Icb699Xgxx0tFALviUo6U4+Mct0J8kuMwBLArUo4PrJvfH9qiLSiAXeH9eRoI9f/ArrhmTZ9+lOPYTvb7143aBrslTQxgV1y0Rf9+1H4f46P2FpiLf9voc9n6+/Yr1uT75ed2dsDmlf16XwC74lYlfC4n1jXkPLaJ1lHj+umBdddVz4ffn2t/r5+Xc/I3jDEstst/xfe1fjr21z7v6PORyu2r1l17TSOhNgBsi2SLvPT8HuuvUzj20Bb573M2qmVutreXwrHAtkinDO/bx9Zea4H5+CvH3z3xzxme17KeFd9rrDk0x37RTp/jZWA+/sjxpL3V1w/Dz+ZO8+fpOccUQ/dnXIB1mTq/nibGus7lZvha44TjFR8f+6GvLlNonrHcExbHp6eJVZTP6X17XMtd9fGxH2Id9tS6NZrfpoGItf3QcTFWEdewWM+dl7E9KpvkOf84xyNrcvxR+N5va3vCNJ5dNpbVtz9tX3Lec+aZLZ87cX0xril6vFI51tcYDyq/2zcpxDL9fFrhuTVOVT1DP98Vc7qWx8nq827qwyJfW1QN++rAY+6jZN33MV4Djmy9OV/+rVTDx/WxMZ4XY59Hr+2vqEV533PF/XXcpsTPX/q458KSj3OhJ/R33max3W+qfX5u3fzWeux1Wz3n/XHiPoc4ptXzlGJ+eh6+Zt05n6HQcVNrub61i1pbKfclDbWtuJ8ptq+D4rhanqbht/QE/a3UZrTGGD/bNjbvUesLNlUjaU9Msub6FPeI6b18vY13cry9xucucz/GsvoeT/FF5T7LzC2NRe2zjUPPE+e6NA92rfJz7VeKxx0Wx161btvX/ibPT13v1PaObXre97UXxfvhvDTH8dTqa1J9ryfWSLVr5VC7H+oL4uPEa378O8XzuNPGNzl+z/FGjjetaQfrbANnJU2Icp9cLfS53imPV8bQPr1P7eR14bOeY6fu6ajl75jafZQz8b3xtqf5Dc15aP7jz/ZrP+699lzKfVmx7cQ81Hs71Srvz90QP+TUv51vY6y7/9+0+H7GvUBlHVIbx62Lni9+Br5sP/H3Hp4rffW0z1fF+qzcFxJrMuVueX0v+8c4Bhjr5z3fvU9Xvj8uvo7tI+4xrNV95b7D07ynsT0Njc094t++zPF7lZ95zLXf13XsJ+u+np+t3gfMReqJoTmtWq5NGavEMZnfPhyJ2Hbi/WOfrnzVcTrvVV//0PnrenW3Et/m+Mqa3Pgyx2/W5M39U5zTtnhgzeu5E0Kvzd+Luf6vkdr1vNbXlXulrgz8Lj5GbR1Gff3cjfXvZcytr79d+V6RQszV1P1QQzF1XqpvbmwXqF+v1QX3zvC8llHm/I+2GK/zeVyIcv2+1WuCufX1UXw9yebfz2M9ptQ4c/CWddcf3rVm7KqcZ88CJPbvX1tTC2hsqzpnDnRd6gv+FzjEc/07W9TvsW9UjTOH+sbP3+t3rbn5HE6cn4pzdthvsXafc32jNlqOyXUdo7aBTKnn5zB/43n9i508d123kjGGRUO1QKzfY52g68C27kvwsauPV8faLf08pKwFlCNqC+V6refXNuR+zPXYPmtrDX6dYgwLiTmi2qAvh5RHv9rZ9fuak9Q+CW+Hql9Uu6sdx1qHNSlIWQN4LpVjwfh1WTOf9fkqvrfuHFQZyTZTz/8PcMXvEA==
+  </data>
+ </layer>
+ <layer id="21" name="OneWay" width="189" height="100" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt2iEOgDAQRNHZC5WCwHP/S1FbX0Ig7yXfrxyxCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAq7RKjtFZb18CAAAAAAAAAADAalslfbT7EQMAfqTZNgB8zFVzAAAAAAAAAAAAAAAA8IQbsLkCZA==
+  </data>
+ </layer>
+ <layer id="9" name="coin" width="189" height="100" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt2UEKwyAQBdDc/6Zziy66SRNLiW10xr4HQSEQZPwDQbcNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICMYvYCYKDYPfAv5B0AAIBqnN8AAAAAAADQErvRndKTOqzLvp7Fpv97VahZ9vXNIPN9rtRtZm3taVuFvMdhbL0f3bsV6saa5I7V+R+75lgrtQMAAABgFmdS3CFrrj7dX0KvzJnKvDboJdfcTcbg1cie0H9k9YtsyjfZ9WS0N9f6gYzizfyb70BFMgxARQ/P00GJ
+  </data>
+ </layer>
+ <layer id="23" name="Heart" width="189" height="100" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7D5t4oJRIyEp1XQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaMx3AAAAAAAAAIAzC7agAOw=
+  </data>
+ </layer>
+ <objectgroup id="16" name="data">
+  <object id="71" name="coin" x="6464" y="4928">
+   <properties>
+    <property name="dispatch" value="71"/>
+    <property name="listen" value="84"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="brick" x="6656" y="4800">
+   <properties>
+    <property name="dispatch" value="84"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="85" name="coin" x="6144" y="5120">
+   <properties>
+    <property name="dispatch" value="85"/>
+    <property name="listen" value="86"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="86" name="coin" x="6144" y="5056">
+   <properties>
+    <property name="dispatch" value="86"/>
+    <property name="listen" value="87"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="87" name="coin" x="6144" y="4992">
+   <properties>
+    <property name="dispatch" value="87"/>
+    <property name="listen" value="88"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="coin" x="6208" y="4928">
+   <properties>
+    <property name="dispatch" value="88"/>
+    <property name="listen" value="89"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" name="coin" x="6336" y="4928">
+   <properties>
+    <property name="dispatch" value="89"/>
+    <property name="listen" value="90"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="coin" x="6400" y="4928">
+   <properties>
+    <property name="dispatch" value="90"/>
+    <property name="listen" value="71"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="91" name="coin" x="6336" y="5312">
+   <properties>
+    <property name="dispatch" value="91"/>
+    <property name="listen" value="92"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="92" name="coin" x="6272" y="5312">
+   <properties>
+    <property name="dispatch" value="92"/>
+    <property name="listen" value="93"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="93" name="coin" x="6208" y="5312">
+   <properties>
+    <property name="dispatch" value="93"/>
+    <property name="listen" value="85"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="coin" x="6592" y="5312">
+   <properties>
+    <property name="listen" value="95"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="coin" x="6528" y="5312">
+   <properties>
+    <property name="dispatch" value="95"/>
+    <property name="listen" value="96"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="coin" x="6464" y="5312">
+   <properties>
+    <property name="dispatch" value="96"/>
+    <property name="listen" value="91"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="97" name="brick" x="1216" y="5184">
+   <properties>
+    <property name="dispatch" value="97"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="98" name="coin" x="1344" y="5312">
+   <properties>
+    <property name="dispatch" value="98"/>
+    <property name="listen" value="97"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" name="coin" x="1408" y="5312">
+   <properties>
+    <property name="dispatch" value="99"/>
+    <property name="listen" value="98"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="100" name="coin" x="1472" y="5312">
+   <properties>
+    <property name="dispatch" value="100"/>
+    <property name="listen" value="99"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="101" name="coin" x="1536" y="5312">
+   <properties>
+    <property name="dispatch" value="101"/>
+    <property name="listen" value="100"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="102" name="coin" x="1600" y="5248">
+   <properties>
+    <property name="dispatch" value="102"/>
+    <property name="listen" value="101"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="103" name="coin" x="1664" y="5184">
+   <properties>
+    <property name="dispatch" value="103"/>
+    <property name="listen" value="102"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="104" name="coin" x="1728" y="5184">
+   <properties>
+    <property name="dispatch" value="104"/>
+    <property name="listen" value="103"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="105" name="coin" x="1792" y="5184">
+   <properties>
+    <property name="dispatch" value="105"/>
+    <property name="listen" value="104"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="106" name="coin" x="1856" y="5184">
+   <properties>
+    <property name="dispatch" value="106"/>
+    <property name="listen" value="105"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" name="coin" x="1152" y="5184">
+   <properties>
+    <property name="listen" value="109"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="108" name="coin" x="1280" y="5184">
+   <properties>
+    <property name="listen" value="112"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="slime" x="4765" y="5346">
+   <properties>
+    <property name="dest" type="int" value="68"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="slime" x="5787.85" y="5346">
+   <properties>
+    <property name="dest" type="int" value="70"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="109" name="brick" x="1152" y="5184">
+   <properties>
+    <property name="dispatch" value="109"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="slime" x="3298.97" y="5152">
+   <properties>
+    <property name="dest" type="int" value="44"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="112" name="brick" x="1280" y="5184">
+   <properties>
+    <property name="dispatch" value="112"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="114" name="cover" x="1920" y="5248">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="115" name="cover" x="2240" y="5376">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="116" name="cover" x="2176" y="5376">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="117" name="cover" x="2112" y="5376">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="118" name="cover" x="2240" y="5312">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="119" name="cover" x="2048" y="5376">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="120" name="cover" x="2176" y="5312">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="121" name="cover" x="2112" y="5312">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="122" name="cover" x="2048" y="5312">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="123" name="cover" x="1984" y="5312">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="124" name="cover" x="2176" y="5248">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="125" name="cover" x="2112" y="5248">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="126" name="cover" x="2048" y="5248">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="127" name="cover" x="1984" y="5248">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="128" name="cover" x="2304" y="5312">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="129" name="cover" x="2240" y="5568">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="130" name="cover" x="2240" y="5504">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="131" name="cover" x="2176" y="5568">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="132" name="cover" x="2176" y="5504">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="133" name="cover" x="2112" y="5568">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="134" name="cover" x="2048" y="5568">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="135" name="cover" x="2112" y="5504">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="136" name="cover" x="2240" y="5440">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="137" name="cover" x="2176" y="5440">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="138" name="cover" x="2112" y="5440">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="139" name="cover" x="2368" y="5440">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="140" name="cover" x="2368" y="5376">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="141" name="cover" x="2368" y="5312">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="142" name="cover" x="2304" y="5568">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="143" name="cover" x="2304" y="5504">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="144" name="cover" x="2304" y="5440">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="145" name="cover" x="2304" y="5376">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="146" name="cover" x="2432" y="5568">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="147" name="cover" x="2432" y="5504">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="148" name="cover" x="2432" y="5440">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="149" name="cover" x="2432" y="5376">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="150" name="cover" x="2432" y="5312">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="151" name="cover" x="2368" y="5568">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="152" name="cover" x="2368" y="5504">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="153" name="cover" x="2496" y="5568">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="154" name="cover" x="2496" y="5504">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="155" name="cover" x="2496" y="5440">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="156" name="cover" x="2496" y="5376">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="157" name="cover" x="2496" y="5312">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="158" name="cover" x="2560" y="5568">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="159" name="cover" x="2560" y="5504">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="160" name="cover" x="2560" y="5440">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="161" name="cover" x="2560" y="5376">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="162" name="cover" x="2560" y="5312">
+   <properties>
+    <property name="listen" value="113"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="pos" x="3169.97" y="5152">
+   <point/>
+  </object>
+  <object id="68" name="pos" x="4322.67" y="5346">
+   <point/>
+  </object>
+  <object id="70" name="pos" x="5471.81" y="5346">
+   <point/>
+  </object>
+  <object id="164" name="Trigger" x="9985.33" y="5113.33" width="68" height="118.667">
+   <properties>
+    <property name="dispatch" value="164"/>
+    <property name="type" value="show"/>
+   </properties>
+  </object>
+  <object id="165" name="cover" x="3328" y="4928">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="166" name="Trigger" x="3264" y="4864" width="64" height="320">
+   <properties>
+    <property name="dispatch" value="166"/>
+    <property name="type" value="hide"/>
+   </properties>
+  </object>
+  <object id="167" x="3369" y="5149" height="1"/>
+  <object id="169" name="cover" x="3392" y="4928">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="170" name="cover" x="3584" y="5056">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="171" name="cover" x="3520" y="5056">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="172" name="cover" x="3456" y="5056">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="173" name="cover" x="3392" y="5056">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="174" name="cover" x="3328" y="5056">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="175" name="cover" x="3776" y="4992">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="176" name="cover" x="3712" y="4992">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="177" name="cover" x="3648" y="4992">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="178" name="cover" x="3584" y="4992">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="179" name="cover" x="3520" y="4992">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="180" name="cover" x="3456" y="4992">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="181" name="cover" x="3392" y="4992">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="182" name="cover" x="3328" y="4992">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="183" name="cover" x="3776" y="4928">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="184" name="cover" x="3712" y="4928">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="185" name="cover" x="3648" y="4928">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="186" name="cover" x="3584" y="4928">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="187" name="cover" x="3520" y="4928">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="188" name="cover" x="3456" y="4928">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="189" name="cover" x="3456" y="5184">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="190" name="cover" x="3392" y="5184">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="191" name="cover" x="3328" y="5184">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="192" name="cover" x="3776" y="5120">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="193" name="cover" x="3712" y="5120">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="194" name="cover" x="3648" y="5120">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="195" name="cover" x="3584" y="5120">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="196" name="cover" x="3520" y="5120">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="197" name="cover" x="3456" y="5120">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="198" name="cover" x="3392" y="5120">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="199" name="cover" x="3328" y="5120">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="200" name="cover" x="3776" y="5056">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="201" name="cover" x="3712" y="5056">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="202" name="cover" x="3648" y="5056">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="203" name="cover" x="3584" y="5312">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="204" name="cover" x="3520" y="5248">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="205" name="cover" x="3520" y="5312">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="206" name="cover" x="3456" y="5312">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="207" name="cover" x="3392" y="5312">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="208" name="cover" x="3328" y="5312">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="209" name="cover" x="3456" y="5248">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="210" name="cover" x="3392" y="5248">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="211" name="cover" x="3328" y="5248">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="212" name="cover" x="3648" y="5184">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="213" name="cover" x="3648" y="5248">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="214" name="cover" x="3648" y="5312">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="215" name="cover" x="3584" y="5248">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="216" name="cover" x="3584" y="5184">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="217" name="cover" x="3520" y="5184">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="218" name="cover" x="3712" y="5184">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="219" name="cover" x="3776" y="5184">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="220" name="cover" x="3776" y="5248">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="221" name="cover" x="3776" y="5312">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="222" name="cover" x="3712" y="5248">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="223" name="cover" x="3712" y="5312">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="224" name="cover" x="3456" y="5376">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="225" name="cover" x="3776" y="5376">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="226" name="cover" x="3712" y="5376">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="227" name="cover" x="3648" y="5376">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="228" name="cover" x="3584" y="5376">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="229" name="cover" x="3520" y="5376">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="230" name="cover" x="3392" y="5376">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="231" name="cover" x="3328" y="5376">
+   <properties>
+    <property name="listen" value="166"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="232" name="coin" x="4160" y="5120">
+   <properties>
+    <property name="listen" value="234"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="233" name="coin" x="4224" y="5120">
+   <properties>
+    <property name="listen" value="235"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="234" name="brick" x="4160" y="5120">
+   <properties>
+    <property name="dispatch" value="234"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="235" name="brick" x="4224" y="5120">
+   <properties>
+    <property name="dispatch" value="235"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="236" name="cover" x="9152" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="237" name="cover" x="9600" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="238" name="cover" x="9600" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="239" name="cover" x="9536" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="240" name="cover" x="9536" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="241" name="cover" x="9472" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="242" name="cover" x="9472" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="243" name="cover" x="9408" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="244" name="cover" x="9408" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="245" name="cover" x="9344" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="246" name="cover" x="9344" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="247" name="cover" x="9280" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="248" name="cover" x="9280" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="249" name="cover" x="9216" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="250" name="cover" x="9152" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="251" name="cover" x="9728" y="5376">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="252" name="cover" x="9792" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="253" name="cover" x="9792" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="254" name="cover" x="9728" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="255" name="cover" x="9728" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="256" name="cover" x="9664" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="257" name="cover" x="9664" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="258" name="cover" x="9216" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="259" name="cover" x="9920" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="260" name="cover" x="9856" y="5376">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="261" name="cover" x="9856" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="262" name="cover" x="9856" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="263" name="cover" x="9792" y="5376">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="264" name="cover" x="9920" y="5312">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="265" name="cover" x="9856" y="5312">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="266" name="cover" x="9792" y="5312">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="267" name="cover" x="9728" y="5312">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="268" name="cover" x="9920" y="5376">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="269" name="cover" x="9920" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="272" name="cover" x="10048" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="273" name="cover" x="10048" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="274" name="cover" x="9984" y="5440">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="275" name="cover" x="9984" y="5504">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="276" name="Trigger" x="6336" y="5184" width="64" height="128">
+   <properties>
+    <property name="dispatch" value="276"/>
+    <property name="type" value="hide"/>
+   </properties>
+  </object>
+  <object id="277" name="cover" x="6400" y="5184">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="289" name="cover" x="6400" y="5568">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="290" name="cover" x="6400" y="5504">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="291" name="cover" x="6400" y="5440">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="292" name="cover" x="6400" y="5376">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="293" name="cover" x="6400" y="5312">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="294" name="cover" x="6464" y="5248">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="295" name="cover" x="6400" y="5248">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="296" name="cover" x="6464" y="5184">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="297" name="cover" x="6592" y="5312">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="298" name="cover" x="6528" y="5312">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="299" name="cover" x="6464" y="5312">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="300" name="cover" x="6464" y="5568">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="301" name="cover" x="6464" y="5504">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="302" name="cover" x="6464" y="5440">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="303" name="cover" x="6464" y="5376">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="304" name="cover" x="6592" y="5568">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="305" name="cover" x="6592" y="5504">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="306" name="cover" x="6592" y="5440">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="307" name="cover" x="6592" y="5376">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="308" name="cover" x="6528" y="5568">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="309" name="cover" x="6528" y="5504">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="310" name="cover" x="6528" y="5440">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="311" name="cover" x="6528" y="5376">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="312" name="cover" x="6656" y="5440">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="313" name="cover" x="6656" y="5376">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="314" name="cover" x="6656" y="5312">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="315" name="cover" x="6656" y="5248">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="316" name="cover" x="6656" y="5184">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="317" name="cover" x="6592" y="5248">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="318" name="cover" x="6592" y="5184">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="319" name="cover" x="6528" y="5184">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="320" name="cover" x="6528" y="5248">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="321" name="cover" x="6720" y="5184">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="322" name="cover" x="6720" y="5248">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="323" name="cover" x="6720" y="5312">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="324" name="cover" x="6720" y="5376">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="325" name="cover" x="6720" y="5440">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="326" name="cover" x="6720" y="5504">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="327" name="cover" x="6720" y="5568">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="328" name="cover" x="6656" y="5568">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="329" name="cover" x="6656" y="5504">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="330" name="cover" x="6848" y="5248">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="331" name="cover" x="6784" y="5504">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="332" name="cover" x="6784" y="5440">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="333" name="cover" x="6784" y="5376">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="334" name="cover" x="6784" y="5312">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="335" name="cover" x="6784" y="5248">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="336" name="cover" x="6784" y="5184">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="337" name="cover" x="6848" y="5312">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="338" name="cover" x="6848" y="5376">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="339" name="cover" x="6848" y="5440">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="340" name="cover" x="6848" y="5504">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="341" name="cover" x="6848" y="5568">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="342" name="cover" x="6784" y="5568">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="343" name="cover" x="6848" y="5184">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="344" name="cover" x="6912" y="5568">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="345" name="cover" x="6912" y="5504">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="346" name="cover" x="6912" y="5440">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="347" name="cover" x="6912" y="5376">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="348" name="cover" x="6912" y="5312">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="349" name="cover" x="6912" y="5248">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="350" name="cover" x="6912" y="5184">
+   <properties>
+    <property name="listen" value="276"/>
+    <property name="type" value="show"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="351" name="Trigger" x="1856" y="4800" width="64" height="384">
+   <properties>
+    <property name="dispatch" value="113"/>
+    <property name="type" value="hide"/>
+   </properties>
+  </object>
+  <object id="352" name="cover" x="9152" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="353" name="cover" x="9600" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="354" name="cover" x="9600" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="355" name="cover" x="9536" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="356" name="cover" x="9536" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="357" name="cover" x="9472" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="358" name="cover" x="9472" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="359" name="cover" x="9408" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="360" name="cover" x="9408" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="361" name="cover" x="9344" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="362" name="cover" x="9344" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="363" name="cover" x="9280" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="364" name="cover" x="9280" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="365" name="cover" x="9216" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="366" name="cover" x="9152" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="367" name="cover" x="9792" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="368" name="cover" x="9792" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="369" name="cover" x="9728" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="370" name="cover" x="9728" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="371" name="cover" x="9664" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="372" name="cover" x="9664" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="373" name="cover" x="9216" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="374" name="cover" x="9920" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="375" name="cover" x="9856" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="376" name="cover" x="9856" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="377" name="cover" x="9920" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="378" name="cover" x="10048" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="379" name="cover" x="10048" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="380" name="cover" x="9984" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="381" name="cover" x="9984" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="382" name="cover" x="9600" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="383" name="cover" x="9536" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="384" name="cover" x="9472" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="385" name="cover" x="9408" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="386" name="cover" x="9344" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="387" name="cover" x="9280" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="388" name="cover" x="9152" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="389" name="cover" x="9792" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="390" name="cover" x="9728" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="391" name="cover" x="9664" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="392" name="cover" x="9216" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="393" name="cover" x="9920" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="394" name="cover" x="9856" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="395" name="cover" x="10048" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="396" name="cover" x="9984" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="397" name="cover" x="9600" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="398" name="cover" x="9536" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="399" name="cover" x="9472" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="400" name="cover" x="9408" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="401" name="cover" x="9344" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="402" name="cover" x="9280" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="403" name="cover" x="9152" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="404" name="cover" x="9792" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="405" name="cover" x="9728" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="406" name="cover" x="9664" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="407" name="cover" x="9216" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="408" name="cover" x="9920" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="409" name="cover" x="9856" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="410" name="cover" x="10048" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="411" name="cover" x="9984" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="412" name="cover" x="10112" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="413" name="cover" x="10112" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="414" name="cover" x="10112" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="415" name="cover" x="10112" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="416" name="cover" x="10176" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="417" name="cover" x="10176" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="418" name="cover" x="10176" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="419" name="cover" x="10176" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="420" name="cover" x="10240" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="421" name="cover" x="10240" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="422" name="cover" x="10240" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="423" name="cover" x="10240" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="424" name="cover" x="10304" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="425" name="cover" x="10304" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="426" name="cover" x="10304" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="427" name="cover" x="10304" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="428" name="cover" x="10368" y="5632">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="429" name="cover" x="10368" y="5568">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="430" name="cover" x="10368" y="5696">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="431" name="cover" x="10368" y="5760">
+   <properties>
+    <property name="listen" value="164"/>
+    <property name="type" value="hide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="432" name="exit" x="11072" y="4800" width="64" height="384"/>
+  <object id="438" name="coin" x="7424" y="4352">
+   <properties>
+    <property name="listen" value="440"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="439" name="coin" x="7488" y="4352">
+   <properties>
+    <property name="listen" value="441"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="440" name="brick" x="7424" y="4352">
+   <properties>
+    <property name="dispatch" value="440"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="441" name="brick" x="7488" y="4352">
+   <properties>
+    <property name="dispatch" value="441"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="442" name="coin" x="7296" y="3904">
+   <properties>
+    <property name="dispatch" value="442"/>
+    <property name="listen" value="447"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="443" name="coin" x="7296" y="4032">
+   <properties>
+    <property name="listen" value="444"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="444" name="coin" x="7360" y="3968">
+   <properties>
+    <property name="dispatch" value="444"/>
+    <property name="listen" value="445"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="445" name="coin" x="7296" y="3968">
+   <properties>
+    <property name="dispatch" value="445"/>
+    <property name="listen" value="446"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="446" name="coin" x="7232" y="3968">
+   <properties>
+    <property name="dispatch" value="446"/>
+    <property name="listen" value="442"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="447" name="Trigger" x="7232" y="4032" width="192" height="64">
+   <properties>
+    <property name="dispatch" value="447"/>
+    <property name="type" value="hide"/>
+   </properties>
+  </object>
+  <object id="451" name="Cover" x="9984" y="5632" width="256" height="256">
+   <properties>
+    <property name="listen" value="452"/>
+    <property name="type" value="show"/>
+   </properties>
+  </object>
+  <object id="452" name="Trigger" x="9920" y="5760" width="64" height="64">
+   <properties>
+    <property name="dispatch" value="452"/>
+    <property name="type" value="hide"/>
+   </properties>
+  </object>
+  <object id="458" name="hero" x="528" y="5258.67">
+   <point/>
+  </object>
+ </objectgroup>
+ <layer id="20" name="LightMushroom" width="189" height="100" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt1ksKgDAMBcDe/4ztXdy4UIk/1LbUGShILJLFSzAlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACghTwfAMZjx/MFmeKves2+XQ/w3HaP2quMrLRuIGDmqKHXnPXaF2OTO0ZT0vof50rG35iD6BvL2rYveFuUsbzzfFS78z66J+vUdjVzZ/NwdD+qyzpAXaXy6d0E2lQ6mg==
+  </data>
+ </layer>
+ <layer id="19" name="Mushroom" width="189" height="100" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt1ksKgDAMBcDe/4jtZdy4UIk/1LbUGShILJLFSzAlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACghTwfAMZjx/MFmeKves2+XQ/w3HaP2quMrLRuIGDmqKHXnPXaF2OTO0ZT0vof50rG35iD6BvL2rYveFuUsbzzfFS78z66J+vUdjVzZ/NwdD+qyzpAXaXy6d0EcXk6Eg==
+  </data>
+ </layer>
+ <layer id="22" name="Cover" width="189" height="100" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt1rkNACAMBMHri6cG+q8GYmIiPCNtB9bJCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAG+0KftdP4zTj5qlhxc5Ti98GAAAAAABq2l8TA8w=
+  </data>
+ </layer>
+ <layer id="11" name="cover" width="189" height="100" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt1+tOwjAYBuD632swTTzEUzzrtQBG7/8ybOMa6gJBEOxgz5O82QYJ+QjvRhsCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANDaNGXW5b06L9dwaOqeT7vr8tqk4VywK7nXde8/Uz7C/B6AQ5N7nXteel+vdWYN54JdKT0v65pZ2K/O5/+pfM+W/UdO+S75/yo2m4y/OurleEufW+9X+73fhz1s7vy0O+aUddmkO8Zmk7ENTymvKY8pb+H791yUdZR+l47Uz8x9WM+XuXPXy7rsPcz3KbHZZJvpP9tY3vM66yjrgcmS49DVe/B6bVOe/2ftRttITLlIOUm5aTvKoMQVGZPcjevuWCf35bY7H4q4IKfh+748712XPHTvjV1ckTHJ673nlJfwszOlK7HVYAv0+30X5r/ZfXV+FebfIR8v/3nOoYm/yJjE8LMvizIUZ1sODJ3OMzY6z9joPAAAAAAAAADZF9bYPBo=
+  </data>
+ </layer>
+ <layer id="15" name="bridge" width="189" height="100" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt0rsNwlAQRcEnuTu+Borga3ARJoMiSF2lbwWIwBLS04x0ok02uKUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHNaNKUs0yqt0yZtU5t2aZ8Ozb+/hPkcs+dTOqdLuqZb6tI9PVJv81RkyJ6fXzb9yu1t81Tk88OeR5sHAAAAAAAAAAAqMgHdwQsA
+  </data>
+ </layer>
+</map>

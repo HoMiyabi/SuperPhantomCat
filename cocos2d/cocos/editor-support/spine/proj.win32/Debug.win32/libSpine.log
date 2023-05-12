@@ -1,0 +1,56 @@
+﻿  Animation.c
+  AnimationState.c
+  AnimationStateData.c
+  Array.c
+  Atlas.c
+  AtlasAttachmentLoader.c
+  Attachment.c
+  AttachmentLoader.c
+  Bone.c
+  BoneData.c
+  BoundingBoxAttachment.c
+  ClippingAttachment.c
+  Color.c
+  Event.c
+  EventData.c
+  extension.c
+  IkConstraint.c
+  IkConstraintData.c
+  Json.c
+  MeshAttachment.c
+  PathAttachment.c
+  PathConstraint.c
+  PathConstraintData.c
+  PointAttachment.c
+  RegionAttachment.c
+  Skeleton.c
+  SkeletonBinary.c
+  SkeletonBounds.c
+  SkeletonClipping.c
+  SkeletonData.c
+  SkeletonJson.c
+  Skin.c
+  Slot.c
+  SlotData.c
+  TransformConstraint.c
+  TransformConstraintData.c
+  Triangulator.c
+  VertexAttachment.c
+  VertexEffect.c
+C:\Users\Mojuko\cocos_project\SuperCat\cocos2d\cocos\editor-support\spine\SkeletonBinary.c(310,24): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\Mojuko\cocos_project\SuperCat\cocos2d\cocos\editor-support\spine\SkeletonBinary.c(372,24): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\Mojuko\cocos_project\SuperCat\cocos2d\cocos\editor-support\spine\SkeletonJson.c(97,12): warning C4018: “>=”: 有符号/无符号不匹配
+C:\Users\Mojuko\cocos_project\SuperCat\cocos2d\cocos\editor-support\spine\SkeletonBinary.c(484,26): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\Mojuko\cocos_project\SuperCat\cocos2d\cocos\editor-support\spine\SkeletonBinary.c(649,2): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\Mojuko\cocos_project\SuperCat\cocos2d\cocos\editor-support\spine\SkeletonBinary.c(652,2): warning C4018: “<”: 有符号/无符号不匹配
+  AttachmentVertices.cpp
+  Cocos2dAttachmentLoader.cpp
+  SkeletonAnimation.cpp
+  SkeletonBatch.cpp
+  SkeletonRenderer.cpp
+  SkeletonTwoColorBatch.cpp
+  spine-cocos2dx.cpp
+C:\Users\Mojuko\cocos_project\SuperCat\cocos2d\cocos\editor-support\spine\SkeletonBatch.cpp(110,42): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\Mojuko\cocos_project\SuperCat\cocos2d\cocos\editor-support\spine\SkeletonTwoColorBatch.cpp(237,42): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\Mojuko\cocos_project\SuperCat\cocos2d\cocos\editor-support\spine\SkeletonTwoColorBatch.cpp(274,37): warning C4018: “<”: 有符号/无符号不匹配
+  libSpine.vcxproj -> C:\Users\Mojuko\cocos_project\SuperCat\proj.win32\Debug.win32\libSpine.lib

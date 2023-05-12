@@ -1,0 +1,93 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "函数使用堆叠的 \"32828\" 字节。请考虑将一些数据移动到堆。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Mojuko/cocos_project/SuperCat/cocos2d/external/recast/fastlz/fastlz.c"
+                },
+                "region": {
+                  "startLine": 166,
+                  "startColumn": 26,
+                  "endLine": 166,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fastlz1_compress",
+                  "decoratedName": "fastlz1_compress",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "函数使用堆叠的 \"32828\" 字节。请考虑将一些数据移动到堆。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Mojuko/cocos_project/SuperCat/cocos2d/external/recast/fastlz/fastlz.c"
+                },
+                "region": {
+                  "startLine": 166,
+                  "startColumn": 26,
+                  "endLine": 166,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "fastlz2_compress",
+                  "decoratedName": "fastlz2_compress",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32216.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Mojuko/cocos_project/SuperCat/cocos2d/external/recast/fastlz/fastlz.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "99bc3a7fa559ad378384ad35b8105607dd60cbbfc16bc3e2276bb8adad32ae5a"
+          }
+        }
+      ]
+    }
+  ]
+}

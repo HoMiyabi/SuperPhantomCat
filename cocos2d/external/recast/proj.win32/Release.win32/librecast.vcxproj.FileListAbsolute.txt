@@ -1,0 +1,1 @@
+C:\Users\Mojuko\cocos_project\SuperCat\cocos2d\external\recast\proj.win32\Release.win32\librecast.vcxproj.CopyComplete

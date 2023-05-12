@@ -1,0 +1,16 @@
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define CREATE_FUNC(__TYPE__) static __TYPE__* create() { __TYPE__ *pRet = new(std::nothrow) __TYPE__(); if (pRet && pRet->init()) { pRet->autorelease(); return pRet; } else { delete pRet; pRet = nullptr; return nullptr; } }
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define CREATE_FUNC(__TYPE__) static __TYPE__* create() { __TYPE__ *pRet = new(std::nothrow) __TYPE__(); if (pRet && pRet->init()) { pRet->autorelease(); return pRet; } else { delete pRet; pRet = nullptr; return nullptr; } }
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define CREATE_FUNC(__TYPE__) static __TYPE__* create() { __TYPE__ *pRet = new(std::nothrow) __TYPE__(); if (pRet && pRet->init()) { pRet->autorelease(); return pRet; } else { delete pRet; pRet = nullptr; return nullptr; } }
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define CREATE_FUNC(__TYPE__) static __TYPE__* create() { __TYPE__ *pRet = new(std::nothrow) __TYPE__(); if (pRet && pRet->init()) { pRet->autorelease(); return pRet; } else { delete pRet; pRet = nullptr; return nullptr; } }

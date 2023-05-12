@@ -1,0 +1,1 @@
+C:\Users\Mojuko\cocos_project\SuperCat\cocos2d\cocos\editor-support\spine\proj.win32\Release.win32\libSpine.vcxproj.CopyComplete
